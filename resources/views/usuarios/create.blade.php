@@ -1,12 +1,12 @@
 @extends('layouth.app')
 
 @section('titulo')
-    Registrar usuario
+    Registrar nuevo usuario
 @endsection
 
 @section('contenido')
 
-        <div class="md:flex md:justify-center">
+        <div class="md:flex md:justify-center ">
             <div class="md:w-96 bg-white p-6 rounded-lg shadow-xl">
                 <form method="post" action="{{ route('usuarios.store') }}">
                     @csrf
@@ -59,7 +59,7 @@
                             
                         @enderror
                     </div>
-                    <button type="submit" class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg"> Registrar usuario </button>
+                    <button type="submit" class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg"> Registrar </button>
                 </form>
             </div>
         </div>
